@@ -1,4 +1,16 @@
-== APP 01
+= APP 01
 
-This app will be my version of a Craigslist clone.  
+== Craigslist clone
 
+# A user will be able to come to the site and view items that are for sale within many different categories.  If the user has an item for sale, he/she will be able to log in securely, post the item for sale, and then even unauthorized users will be able to see the user.  The posts will also contain the caller's contact information such as email and/or phone number.  
+
+=== Models:
+ * User model (devise)
+ * ItemCategory
+  - Title
+ * Post model 
+  - title
+  - post
+  - phone
+  - email
+  - send secure message (?)
