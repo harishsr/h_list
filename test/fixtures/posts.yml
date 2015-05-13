@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: "Title of the post"
+  content: "Content of the post"
+  phone: 9045
+  email: "email@email.com"
+  user_id: 1
+
+two:
+  title: MyString
+  content: MyText
+  phone: 1
+  email: MyString
+  user_id: 1

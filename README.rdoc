@@ -14,4 +14,5 @@ A buyer will be able to come to the site and view items that are for sale within
   - phone
   - email
   - send secure message (?)
-  - category it belongs to
+  - user_id
+  - category: add this when creating Category
