@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  test "gets home" do 
+    get :home
+    assert :success
+  end
+  
 end
