@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 20150513200350) do
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
-    t.integer  "phone"
+    t.integer  "phone",      limit: 8
     t.string   "email"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "users", force: :cascade do |t|

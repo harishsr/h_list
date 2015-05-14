@@ -8,7 +8,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     if @post.save
       flash[:success] = "Your new posting was created."
-      redirect_to 'show' 
+      render 'show' 
     else 
       flash[:danger] = "There was an error."
       render 'new'
@@ -23,7 +23,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     if @post.update_attributes(post_params)
       flash[:success] = "Your posting was updated."
-      redirect_to 'show' 
+      render 'show' 
     else 
       flash[:danger] = "There was an error."
       render 'edit'

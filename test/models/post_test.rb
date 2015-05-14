@@ -34,7 +34,5 @@ class PostTest < ActiveSupport::TestCase
     @post.phone = 1112223333
     assert @post.valid?
 
-    @post.phone = 
-    assert @post.valid?
   end
 end
