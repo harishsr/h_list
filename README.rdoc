@@ -4,6 +4,8 @@
 
 A buyer will be able to come to the site and view items that are for sale within many different categories.  Sellers will be able to log in securely, post the item for sale, and then buyers will be able to see the item in its category.  The posts will also contain the seller's contact information such as email and/or phone number.  
 
+No scaffolding will be used.  
+
 === Models:
 - User model (devise)
 - ItemCategory (added using the console, not a view)

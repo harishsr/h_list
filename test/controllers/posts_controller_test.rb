@@ -5,6 +5,7 @@ class PostsControllerTest < ActionController::TestCase
   def setup
     @user = users(:spiderman)
     @post = posts(:one)
+    @posts = Post.all
   end
 
   test "should get new" do
@@ -13,12 +14,17 @@ class PostsControllerTest < ActionController::TestCase
   end
 
   test "should get show" do
-    get post_path(@post)
+    get :show, id: @post
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit
+    get :edit, id: @post
+    assert_response :success
+  end
+
+  test "should get index" do 
+    get :index
     assert_response :success
   end
 
