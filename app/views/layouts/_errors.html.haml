@@ -1,0 +1,7 @@
+- if @post.errors.any? 
+ %ul
+  %h2 
+   = pluralize(@post.errors.count, "error") 
+   on this page:
+  - @post.errors.full_messages.each do |msg|
+   %li= msg
