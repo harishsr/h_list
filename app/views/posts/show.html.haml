@@ -4,4 +4,4 @@
 %h2= @post.title
 %p= @post.content
 %p= link_to("Edit", edit_post_path(@post)) 
-= link_to("Delete post", @post, method: :delete, data: { confirm: "Are you sure?" })
+= link_to("Delete", @post, method: :delete, data: { confirm: "Are you sure?" })

@@ -5,6 +5,6 @@ class Post < ActiveRecord::Base
   validates :content, presence: true
   validates :phone, length: { is: 10 },
                     presence: false
-  validates_numericality_of :phone, in: (1..10)
+  # validates_numericality_of :phone, in: (1..10)
 
 end
