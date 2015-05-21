@@ -51,6 +51,11 @@ class PostsCrudTest < ActionDispatch::IntegrationTest
     assert_select 'h2', title
   end
 
+  test "fails to edit a post with inaccurate info" do 
+    patch post_path @p, post: { title: "", content: "", phone: 12, email: "ss" }
+    assert_template 'posts/edit'
+  end
+
   test "deletes a post successfully" do 
     get post_path(@p)
     assert_difference 'Post.count', -1 do 
