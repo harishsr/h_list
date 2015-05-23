@@ -1,0 +1,8 @@
+.center
+ %ul{:class => ["nav", "nav-pills", "inverse"]}
+  %li{:role => "presentation"}
+   = link_to "Home", root_path
+  %li{:role => "presentation"}
+   = link_to "All Postings", posts_path
+  %li{:role => "presentation"}
+   = link_to "New Posting", new_post_path

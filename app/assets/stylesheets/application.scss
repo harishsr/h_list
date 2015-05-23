@@ -1,0 +1,29 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+  @import "bootstrap-sprockets";
+  @import "bootstrap";
+
+// VARIABLES
+
+  
+
+// MAIN
+
+  body {
+    background: white;
+    padding: 1%;
+    margin: 0;
+  }
+
+// NAVBAR
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+// DEVISE
+
+  .notice, .alert {
+    padding: 0;
+    margin: 0;
+  }
