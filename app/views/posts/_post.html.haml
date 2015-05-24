@@ -1,3 +1,5 @@
-.title
- = post.created_at.localtime.strftime("%D at %R")
- = link_to post.title, post_path(post)
+%div{class: ["row", "show-post"]}
+ .col-md-2
+  = post.created_at.localtime.strftime("%D at %R")
+ .col-md-10
+  = link_to post.title, post_path(post)
