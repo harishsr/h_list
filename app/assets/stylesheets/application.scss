@@ -4,6 +4,7 @@
 
 // VARIABLES
 
+  $form1: darken(#428bca, 6.5%);
   
 
 // MAIN
@@ -26,4 +27,34 @@
   .notice, .alert {
     padding: 0;
     margin: 0;
+  }
+
+// FORMS
+
+  .form-field {
+    background: lighten($form1, 49%);
+    padding: 2px;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.8em;
+
+
+    &:focus {
+      background: lighten($form1, 47%);
+    }
+  }
+
+  input[type="submit"] {
+    background: $form1;
+    width: 100%;
+    color: lighten($form1, 49%);
+    border: 1px solid $form1;
+    border-radius: 5px;
+    font-size: 1.8em;
+
+    &:hover {
+      border: 1px solid black;
+    }
   }
