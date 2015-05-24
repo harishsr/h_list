@@ -13,3 +13,11 @@ two:
   phone: 1112223333
   email: MyString
   user_id: users(:batman).id
+
+<% 30.times do |n| %>
+post_<%= n %>:
+  title: "Title of post"
+  content: <%= "Content of post.  "*20 %>
+  phone: 
+  email: "email@h_list.com"
+<% end %>
