@@ -67,6 +67,8 @@
 
     &:hover {
       border: 1px solid black;
+      background: lighten($form1, 10%);
+      color: white;
     }
   }
 

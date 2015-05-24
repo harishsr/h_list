@@ -18,3 +18,13 @@ No scaffolding will be used.
   - send secure message (?)
   - user_id
   - category: add this when creating Category
+
+== BRANCHES:
+- a4-additional-post-modeling
+  - X Add the will_paginate gem / features
+  - Validations for email
+  - Non-required validations for phone
+  - Test modifications
+  - Refactoring
+  - X Reverse order of postings shown
+  - Heroku
