@@ -7,17 +7,10 @@ one:
   email: "email@email.com"
   user_id: users(:spiderman).id
 
-two:
-  title: MyString
-  content: MyText
-  phone: 1112223333
-  email: MyString
-  user_id: users(:batman).id
-
 <% 30.times do |n| %>
 post_<%= n %>:
   title: "Title of post"
   content: <%= "Content of post.  "*20 %>
   phone: 
-  email: "email@h_list.com"
+  email: "email@hlist.com"
 <% end %>

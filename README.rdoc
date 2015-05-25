@@ -22,7 +22,6 @@ No scaffolding will be used.
 == BRANCHES:
 - a4-additional-post-modeling
   - Validations for email
-  - Unrequired validations for phone
   - Test modifications
   - Refactoring
   - Heroku

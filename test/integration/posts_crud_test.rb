@@ -5,7 +5,7 @@ class PostsCrudTest < ActionDispatch::IntegrationTest
     @post = { title: "This is the title",
                content: "Detailed comment."*10,
                phone: 9991118888,
-               email: "email@h_list.com",
+               email: "email@hlist.com",
                user_id: users(:spiderman).id }
     @p = Post.create(@post)
   end

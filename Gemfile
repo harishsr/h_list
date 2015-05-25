@@ -15,6 +15,7 @@ gem 'sdoc',                     '0.4.0', group: :doc
 gem 'devise',                   '3.4.1'
 gem 'will_paginate',            '3.0.7'
 gem 'bootstrap-will_paginate',  '0.0.10'
+gem 'validates_email_format_of',  '1.6.2'
 
 
 group :development, :test do
