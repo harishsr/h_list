@@ -1,7 +1,12 @@
 class PostsController < ApplicationController
 
   def new
-    @post = current_user.posts.build
+    if current_user
+      @post = current_user.posts.build
+    else
+      flash[:danger] = "You must be logged in to do that."
+      redirect_to new_user_session_path
+    end
   end
 
   def create
