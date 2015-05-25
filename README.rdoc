@@ -8,17 +8,15 @@ No scaffolding will be used.
 
 === Models:
 - User model (devise)
-- ItemCategory (added using the console, not a view)
+- ItemCategory (added using SEEDS [not view] so that it can be copied for new cities)
   - Title
 - Post model 
   - title
   - post
   - phone
   - email
-  - send secure message (?)
   - user_id
   - category: add this when creating Category
 
 == BRANCHES:
-- a4-additional-post-modeling
-  - Heroku
+- a5-devise-integration
