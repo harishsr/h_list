@@ -3,7 +3,8 @@ require 'test_helper'
 class PostTest < ActiveSupport::TestCase
 
   def setup
-    @post = Post.new(title: "This is a test post", content: "This post has a lot of content.  "*6, 
+    @user = User.create(email: "spiderman@hlist.com", encrypted_password: Devise.bcrypt(User, 'maryjane'))
+    @post = @user.posts.build(title: "This is a test post", content: "This post has a lot of content.  "*6, 
                      phone: 9045556666, email: "test@hlist.com", user_id: users(:spiderman).id)
   end
 

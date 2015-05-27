@@ -1,9 +1,11 @@
 require 'test_helper'
 
 class PostsControllerTest < ActionController::TestCase
+  include Devise::TestHelpers
 
   def setup
     @user = users(:spiderman)
+    sign_in @user
     @post = posts(:one)
     @posts = Post.all
   end

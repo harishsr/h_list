@@ -6,8 +6,8 @@
 #
 spiderman: 
   email: "spiderman@h_list.com"
-  encrypted_password: <%= Devise.bcrypt(User, 'maryjane') %>
+  encrypted_password: <%= Devise.bcrypt(User, 'password1') %>
 
 batman:
   email: "batman@h_list.com"
-  encrypted_password: <%= Devise.bcrypt(User, 'catwoman') %>
+  encrypted_password: <%= Devise.bcrypt(User, 'password1') %>
