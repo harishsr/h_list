@@ -1,5 +1,5 @@
 .row
- .col-md-8
+ %div{class: ["col-md-8"], align: "right"}
   %ul{:class => ["nav", "nav-pills"]}
    %li{:role => "presentation"}
     = link_to "Home", root_path
@@ -9,7 +9,7 @@
     = link_to "New Posting", new_post_path
  .col-md-4
   %ul{:class => ["nav", "nav-pills"]}
-   - if current_user
+   - if user_signed_in?
     %li{:role => "presentation", class: "dropdown"}
      %a{ href: "", class: "dropdown-toggle", "data-toggle" => "dropdown", role: "button", "aria-expanded" => "false"} 
       My Account

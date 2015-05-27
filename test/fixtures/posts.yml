@@ -10,7 +10,15 @@ one:
 <% 30.times do |n| %>
 post_<%= n %>:
   title: "Title of post"
-  content: <%= "Content of post.  "*20 %>
+  content: <%= "Content of post.  "*10 %>
   phone: 
   email: "email@hlist.com"
+  user_id: users(:batman).id
+
+post_<%= n %>:
+  title: "Title of post"
+  content: <%= "Content of post.  "*20 %>
+  phone: 1112223333
+  email: "email@hlist.com"
+  user_id: users(:spiderman).id
 <% end %>

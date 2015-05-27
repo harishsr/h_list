@@ -1,12 +1,8 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
 
   def new
-    if current_user
-      @post = current_user.posts.build
-    else
-      flash[:danger] = "You must be logged in to do that."
-      redirect_to new_user_session_path
-    end
+    @post = current_user.posts.build
   end
 
   def create
