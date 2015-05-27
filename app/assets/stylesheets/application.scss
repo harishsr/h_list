@@ -22,8 +22,15 @@
 
 // NAVBAR
 
-  .navigation {
-    right: 0px;
+  a#brand {
+    margin: 0;
+    padding: 0px;
+    float: top;
+    color: black;
+    &:hover {
+      color: tomato;
+      text-decoration: none;
+    }
   }
 
 // FOOTER
