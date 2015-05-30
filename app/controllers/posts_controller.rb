@@ -17,7 +17,11 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(params[:id])
+    if user_signed_in? && current_user.id == Post.find(params[:id]).user_id
+      @post = Post.find(params[:id])
+    else
+      redirect_to root_url, alert: "Access Denied."
+    end
   end
 
   def update

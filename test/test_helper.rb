@@ -6,7 +6,7 @@ class ActiveSupport::TestCase
   fixtures :all
 
   def sign_in_as(user)
-    post_via_redirect user_session_path, 'user[:email]' => user.email, 
-                           'user[:encrypted_password]' => 'password1'
+    post_via_redirect user_session_path, 'user[email]' => user.email, 
+                           'user[password]' => user.password
   end
 end

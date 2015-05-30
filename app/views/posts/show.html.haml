@@ -4,8 +4,8 @@
 %h2= @post.title
 %p= @post.content
 %p
- - if @post.user == current_user
+ - if user_signed_in? && current_user == @post.user
   = link_to("Edit", edit_post_path(@post)) 
   | 
-  = link_to("Delete", @post, method: :delete, data: { confirm: "Are you sure?" })
+  = link_to("Delete", @post, method: :delete, data: { confirm: "Are you sure you want this post gone forever?" })
  
