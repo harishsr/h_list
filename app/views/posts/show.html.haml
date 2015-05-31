@@ -3,6 +3,13 @@
 %h1 Posting:
 %h2= @post.title
 %p= @post.content
+%br
+%p.col-md-1
+ Contact by:
+ = link_to "email", "mailto:#{@post.email}"
+%p.col-md-11
+ Contact by 
+ = link_to "phone", "tel:#{@post.phone}"
 %p
  - if user_signed_in? && current_user == @post.user
   = link_to("Edit", edit_post_path(@post)) 

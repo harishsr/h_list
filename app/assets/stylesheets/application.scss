@@ -31,14 +31,27 @@
 // DEVISE
 
   .notice, .alert {
-    padding: 0;
-    margin: 0;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .notice {
+    background: lightgreen;
+  }
+
+  .alert {
+    background: tomato;
+    color: white;
   }
 
 // FORMS
 
-  .form-field {
+  .form-field,
+  .field input[type="email"],
+  .field input[type="password"] {
     background: lighten($form1, 49%);
+    // margin: 0 0 12px 0;
     padding: 2px;
     color: black;
     border: 1px solid gray;
@@ -54,6 +67,7 @@
 
   input[type="submit"] {
     background: $form1;
+    margin: 15px 0;
     width: 100%;
     color: lighten($form1, 49%);
     border: 1px solid $form1;
