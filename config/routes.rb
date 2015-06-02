@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'static_pages#home'
-  resources :posts
+
+  # resources :groupings do 
+    resources :posts
+  # end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
