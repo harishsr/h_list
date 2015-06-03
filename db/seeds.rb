@@ -1,6 +1,6 @@
 50.times do |n|
   Post.create!(
-    title: "This is title #{n} and it is a basic title",
+    title: "Ferrari of your dreams in great condition and freshly waxed.  Only $#{n},000.",
     content: "This content is for title #{n}.  It is being written 20 times.  "*20,
     phone: 1112223333,
     email: "email#{n}@hlist.com",
@@ -8,8 +8,8 @@
   )
 
   Post.create!(
-    title: "This is title #{n+50} and it is a basic title",
-    content: "This content is for title #{n+50}.  It is being written 20 times.  "*20,
+    title: "Website creation service: only $#{100-n}00!",
+    content: "This content is for title #{100-n}.  It is being written 40 times.  "*40,
     phone: 1112223333,
     email: "email#{n}@hlist.com",
     user_id: 2
